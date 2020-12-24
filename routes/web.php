@@ -44,3 +44,47 @@ Route::get('/contact-us', function () {
 Route::get('/login', function () {
     return view('login');
 })->name('login');
+
+Route::get('/dashboard', function () {
+    return view('admin.dashboard');
+})->name('dashboard');
+
+Route::get('/dashboard/about', function () {
+    return view('admin.view-about');
+})->name('view-about');
+
+Route::get('/dashboard/edit-about', function () {
+    return view('admin.edit-about');
+})->name('edit-about');
+
+Route::get('/dashboard/blood-tips', function () {
+    return view('admin.view-blood-tips');
+})->name('view-blood-tips');
+
+Route::get('/dashboard/edit-blood-tips', function () {
+    return view('admin.edit-blood-tips');
+})->name('edit-blood-tips');
+
+Route::get('/dashboard/upcoming-events', function () {
+    return view('admin.view-upcoming-events');
+})->name('view-upcoming-events');
+
+Route::get('/dashboard/add-upcoming-events', function () {
+    return view('admin.add-upcoming-events');
+})->name('add-upcoming-event');
+
+Route::get('/dashboard/edit-upcoming-events', function () {
+    return view('admin.edit-upcoming-events');
+})->name('edit-upcoming-event');
+
+Route::get('/dashboard/blood-groups', function () {
+    return view('admin.view-blood-groups');
+})->name('view-blood-groups');
+
+Route::get('/dashboard/donors', function () {
+    return view('admin.view-donors');
+})->name('view-donors');
+
+Route::get('/dashboard/recipients', function () {
+    return view('admin.view-recipients');
+})->name('view-recipients');

@@ -1,10 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="card">
-        <div class="card-header"></div>
-        <div class="card-body">
-            <div class="row">
                 <div class="col-md-8">
                     <h2>Register as a Recipient</h2>
                     <form>
@@ -113,7 +109,4 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
 @endsection
