@@ -88,3 +88,11 @@ Route::get('/dashboard/donors', function () {
 Route::get('/dashboard/recipients', function () {
     return view('admin.view-recipients');
 })->name('view-recipients');
+
+Route::get('/user/donor', function () {
+    return view('user.donor-dashboard');
+})->name('donor-dashboard');
+
+Route::get('/user/recipient', function () {
+    return view('user.recipient-dashboard');
+})->name('recipient-dashboard');
